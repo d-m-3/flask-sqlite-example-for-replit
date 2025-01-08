@@ -33,7 +33,7 @@ Designed as an educational project for students at **Gymnase de Bienne**, it dem
 ## Requirements
 
 - Python 3.7 or above
-- Flask library
+- Flask library (will be imported automatically via the file `requirements.txt`)
 - SQLite
 
 ---
