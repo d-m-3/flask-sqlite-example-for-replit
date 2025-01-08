@@ -1,4 +1,4 @@
- # Flask User Management Application Example (flask-sqlite-example-for-replit)
+ # Flask User Management Application Example For Replit (flask-sqlite-example-for-replit)
 
 This project is a simple Flask web application to manage users. It allows you to:
 - View a list of users.
