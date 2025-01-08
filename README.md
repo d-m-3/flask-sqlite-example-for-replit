@@ -49,3 +49,9 @@ Designed as an educational project for students at **Gymnase de Bienne**, it dem
    - Ensure the project structure matches the provided files.
 
 ---
+
+## Author
+
+**Dimitri Gurtner**  
+[GitHub Profile](https://github.com/d-m-3)  
+dimitri.gurtner@gmail.com
