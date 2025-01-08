@@ -6,7 +6,7 @@ This project is a simple Flask web application to manage users. It allows you to
 - Edit existing users.
 - Delete users.
 
-Designed as an educational project for students at **Gymnase de Bienne**, it demonstrates the basics of backend programming with Python, Flask, and SQLite.
+Designed as an educational project for students at *Gymnase de Bienne*, it demonstrates the basics of **backend web programming** with Python, Flask, and SQLite.
 
 ---
 
