@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="header">Gymnase de Bienne</h1>
+    <h1>Add New User</h1>
+    <form method="POST">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="field">Field:</label></td>
+                    <td><input type="text" id="field" name="field" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: right;">
+                        <button type="submit">Add User</button>
+                        <a href="{{ url_for('get_users') }}">Cancel</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

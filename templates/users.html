@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="header">Gymnase de Bienne</h1>
+    <h1>List of students and fields</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Field</th>
+                <th>Edition</th>
+                <th>Deletion</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user[0] }}</td>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[2] }}</td> <!-- Ensure this matches the database index for 'field' -->
+                <td class="action"><a href="{{ url_for('edit_user', user_id=user[0]) }}">✏️ Edit</a></td>
+                <td class="action"><a href="{{ url_for('delete_user', user_id=user[0]) }}">❌ Del</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p>
+        <a href="{{ url_for('add_user') }}" class="button">➕ Add User</a>
+    </p>
+
+</body>
+</html>
